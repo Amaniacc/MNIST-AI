@@ -1,22 +1,9 @@
-/*  Amani Cheatham
- *  102-81-556
- *  CSC 475 - Assignemnt 2
- *  Due: October 27, 2022
- *  
- *  This program generates a neural network AI that goes through the MNIST training data and correctly guesses what the outputs
- *  are by using Schocastic Gradient Descent and backpropogation. The MNIST training data is setup as a CSV file that this program
- *  reads from and converts it into a single array. We then go through all the inputs of the CSV using SGD and backpropogation
- *  to update the randomly generated weights and biases in hopes that it will improve in accuracy overtime. Finally, it will
- *  go through the MNIST testing set to see how much it actually learned.x`
- */
-
-
 import java.util.*;
 import java.io.*;
 import java.text.*;
 
 // Main Class - To instantiate the neural network and print outputs
-public class Assignment_1 {
+public class MNIST_AI {
     static NeuralNetwork network = new NeuralNetwork();
 
     public static void startTraining()
